@@ -7,8 +7,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Social DashBoard App',
-      theme: ThemeData(fontFamily: 'Inter'),
+      theme: ThemeData(
+          fontFamily: 'Inter',
+          textTheme: const TextTheme(
+              bodyText1: TextStyle(fontWeight: FontWeight.w400),
+              bodyText2: TextStyle(fontWeight: FontWeight.w700))),
       home: const HomePage(),
     );
   }

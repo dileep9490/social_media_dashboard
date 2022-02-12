@@ -17,7 +17,6 @@ const Color toggledark2 = Color(0xff3eda82);
 //* for light theme
 const Color toggleLight = Color(0xffaeb3cb);
 
-
 //! Dark Theme
 const Color darkBG = Color(0xff1e202a);
 const Color topDarkBG = Color(0xff1f212e);
@@ -27,7 +26,7 @@ const Color darkText2 = Color(0xffffffff);
 
 //! Light Theme
 const Color whiteBG = Color(0xffffffff);
-const Color topLightBG = Color(0xfff5f7ff);
+const Color topLightBG = Color.fromARGB(255, 222, 233, 240);
 const Color lightCardBg = Color(0xfff0f2fa);
 const Color lightText1 = Color(0xff63687e);
 const Color lightText2 = Color(0xff1e202a);
