@@ -11,6 +11,7 @@ class OverView_widget extends StatelessWidget {
     required this.iconPath,
     required this.count,
     required this.upordown,
+    required this.percentageColor,
     required this.percentage,
   }) : super(key: key);
 
@@ -20,6 +21,7 @@ class OverView_widget extends StatelessWidget {
   final String count;
   final String upordown;
   final String percentage;
+  final Color percentageColor;
 
   @override
   Widget build(BuildContext context) {
@@ -60,10 +62,13 @@ class OverView_widget extends StatelessWidget {
               Row(
                 children: [
                   SvgPicture.asset(upordown),
+                  const SizedBox(
+                    width: 4,
+                  ),
                   Text(
                     "$percentage%",
-                    style:
-                        theme.textTheme.bodyText2!.copyWith(color: limegreen),
+                    style: theme.textTheme.bodyText2!
+                        .copyWith(color: percentageColor),
                   )
                 ],
               )

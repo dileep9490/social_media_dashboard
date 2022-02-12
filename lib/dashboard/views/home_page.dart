@@ -119,6 +119,7 @@ class _HomePageView extends StatelessWidget {
                   .copyWith(color: lightText1, fontSize: 26),
             ),
             OverView_widget(
+              percentageColor: limeGreen,
               theme: theme,
               title: 'Page Views',
               iconPath: 'assets/images/icon-facebook.svg',
@@ -127,6 +128,7 @@ class _HomePageView extends StatelessWidget {
               percentage: '3',
             ),
             OverView_widget(
+              percentageColor: brightRed,
               theme: theme,
               title: 'Likes',
               iconPath: 'assets/images/icon-facebook.svg',
@@ -135,6 +137,7 @@ class _HomePageView extends StatelessWidget {
               percentage: '2',
             ),
             OverView_widget(
+              percentageColor: limeGreen,
               theme: theme,
               title: 'Likes',
               iconPath: 'assets/images/icon-instagram.svg',
@@ -143,6 +146,7 @@ class _HomePageView extends StatelessWidget {
               percentage: '2257',
             ),
             OverView_widget(
+              percentageColor: limeGreen,
               theme: theme,
               title: 'Profile Views',
               iconPath: 'assets/images/icon-instagram.svg',
@@ -151,6 +155,7 @@ class _HomePageView extends StatelessWidget {
               percentage: '1375',
             ),
             OverView_widget(
+              percentageColor: limeGreen,
               theme: theme,
               title: 'Retweets',
               iconPath: 'assets/images/icon-twitter.svg',
@@ -159,6 +164,7 @@ class _HomePageView extends StatelessWidget {
               percentage: '303',
             ),
             OverView_widget(
+              percentageColor: limeGreen,
               theme: theme,
               title: 'Likes',
               iconPath: 'assets/images/icon-twitter.svg',
@@ -167,6 +173,7 @@ class _HomePageView extends StatelessWidget {
               percentage: '553',
             ),
             OverView_widget(
+              percentageColor: brightRed,
               theme: theme,
               title: 'Likes',
               iconPath: 'assets/images/icon-youtube.svg',
@@ -175,6 +182,7 @@ class _HomePageView extends StatelessWidget {
               percentage: '19',
             ),
             OverView_widget(
+              percentageColor: limeGreen,
               theme: theme,
               title: 'Total Views',
               iconPath: 'assets/images/icon-youtube.svg',
