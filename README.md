@@ -1,16 +1,22 @@
-# social_media_dashboard
+# Tip Calculator App
 
-A new Flutter project.
+This is a solution to the [Social media dashboard with theme switcher](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H).
 
-## Getting Started
+## Table of contents
 
-This project is a starting point for a Flutter application.
+- [The challenge](#the-challenge)
+- [Screenshot](#screenshot)
 
-A few resources to get you started if this is your first Flutter project:
+### The challenge
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Users should be able to:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- change Theme
+
+
+![](design\mobile-design-light.jpg)
+![](design\mobile-design-dark.jpg)
+### Screenshot of my App
+
+![](images\screenshot1.png)
+![](images\screenshot2.png)
