@@ -28,7 +28,7 @@ class OverView_widget extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5),
-        color: topLightBG,
+        color: theme.cardColor,
       ),
       margin: const EdgeInsets.only(top: 22),
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),

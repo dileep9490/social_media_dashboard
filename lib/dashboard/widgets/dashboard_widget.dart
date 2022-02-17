@@ -32,9 +32,9 @@ class Dashboard_Widget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 10),
-      decoration: const BoxDecoration(
-          color: topLightBG,
-          borderRadius: BorderRadius.all(Radius.circular(5))),
+      decoration: BoxDecoration(
+          color: theme.cardColor,
+          borderRadius: const BorderRadius.all(Radius.circular(5))),
       child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:social_media_dashboard/const.dart';
 import 'package:social_media_dashboard/dashboard/widgets/dashboard_widget.dart';
+import 'package:social_media_dashboard/theme/app_theme.dart';
+import 'package:social_media_dashboard/theme/bloc/app_theme_bloc.dart';
 
 import '../widgets/overview_widget.dart';
 
@@ -11,16 +14,24 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return SafeArea(
       child: Scaffold(
-        body: _HomePageView(),
+        backgroundColor: Theme.of(context).backgroundColor,
+        body: const _HomePageView(),
       ),
     );
   }
 }
 
-class _HomePageView extends StatelessWidget {
+class _HomePageView extends StatefulWidget {
   const _HomePageView({Key? key}) : super(key: key);
+
+  @override
+  State<_HomePageView> createState() => _HomePageViewState();
+}
+
+class _HomePageViewState extends State<_HomePageView> {
+  bool _isThemeSwitch = false;
 
   @override
   Widget build(BuildContext context) {
@@ -58,9 +69,18 @@ class _HomePageView extends StatelessWidget {
                   style: theme.textTheme.bodyText2!.copyWith(color: lightText1),
                 ),
                 Switch(
-                    value: false,
+                    value: _isThemeSwitch,
                     onChanged: (value) {
-                      //TODO: make it gradient when true
+                      _isThemeSwitch = value;
+
+                      if (_isThemeSwitch) {
+                        BlocProvider.of<AppThemeBloc>(context)
+                            .add(AppThemeEvent(theme: AppTheme.darkTheme));
+                      } else {
+                        BlocProvider.of<AppThemeBloc>(context)
+                            .add(AppThemeEvent(theme: AppTheme.lightTheme));
+                      }
+                      
                     }),
               ],
             ),
